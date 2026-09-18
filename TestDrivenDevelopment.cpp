@@ -35,6 +35,9 @@ int main(){
 //Function Definitions for isSorted function and its multiple test cases.
 bool isSorted(const int* arr, const int size){
 
+    if(size == 0)
+        return true;
+        
     for (int i = 0; i < size; i++){
         
         if(arr[i] > arr[i + 1])
